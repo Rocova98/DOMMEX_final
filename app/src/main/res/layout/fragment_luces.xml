@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/idControl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/titulo_nivel_luces"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnEncender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idControl"
+        android:layout_marginTop="59dp"
+        android:onClick="OnClickEncender"
+        android:text="Encender" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnEncender"
+        android:layout_marginTop="5dp"
+        android:onClick="onSW1Onclick"
+        android:text="Switch" />
+
+    <Button
+        android:id="@+id/btnApagar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnEncender"
+        android:layout_marginTop="109dp"
+        android:onClick="OnClickUH"
+        android:text="Apagar" />
+
+    <Button
+        android:id="@+id/btnApagar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnEncender"
+        android:layout_marginTop="44dp"
+        android:onClick="OnClickApagar"
+        android:text="Apagar" />
+
+    <TextView
+        android:id="@+id/idBufferIN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnApagar"
+        android:layout_marginTop="81dp"
+        android:text="Dato:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/idBufferIN2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idBufferIN"
+        android:layout_marginTop="8dp"
+        android:text="Dato:"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnDesconectar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idBufferIN"
+        android:layout_marginTop="51dp"
+        android:onClick="OnClickDesconectar"
+        android:text="Desconectar" />
+
+</RelativeLayout>
